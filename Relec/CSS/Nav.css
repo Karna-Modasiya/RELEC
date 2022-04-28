@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Roboto+Slab&display=swap');
+
+      *{
+        font-family: 'Roboto Slab', serif;
+        padding: 0;
+        margin: 0;
+        overflow-x:hidden;
+      }
+      .active{
+        border-bottom: 2px solid white;   
+    }
+      .navbar-custom {
+        width: 99.3vw;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        /* color: black; */
+        background-color: rgba(7, 7, 7, 0.699);
+      }
+      .heading{
+        font-family: 'Cormorant SC', serif !important;
+        /* font-size: 2.5rem !important; */
+      }
+      nav{
+        /* font-family: 'Roboto', sans-serif; */
+        font-weight: 400;
+        font-size: 15px;
+      }
+      .navhead {
+        width: 95vw;
+        display: flex !important;
+      }
+      .donate{
+        width: 100px;
+      }
+      .logo {
+        font-size: 22px;
+        width: 30vw;
+      }
+      .navfoot{
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .nav-item{
+        margin: 0px 10px;
+      }
+    
+    .contact ul li{
+        list-style: none;
+        text-align: center;
+    }
+    .contact ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .contact{
+      display: flex;
+    }
+    .headline{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    @media (max-width: 995px) {
+      .donate {
+        display: none;
+      }
+      .navfoot{
+        width: auto !important;
+      }
+      .logo {
+        width: auto !important;
+      }
+      .navhead {
+        width: auto !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .contact{
+        flex-direction: column;
+        padding-bottom: 10px;
+      } 
+    }
+    @media (max-width: 530px) {
+      .headline{
+        flex-direction: column;
+        padding-bottom: 10px;
+      }
+    }
+    /*  */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }

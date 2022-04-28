@@ -1,0 +1,109 @@
+.teams{
+    background: var(--color-bg2);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.685);
+    padding: 2rem 0;
+    padding-bottom: 5rem;
+}
+
+.container__team{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+
+.team__member{
+    background: var(--color-bg1);
+    border: 1px solid transparent;
+    padding: 2rem;
+}
+.team__member *{
+    text-align: center;
+    padding-top: 0.2rem;
+}
+
+.team__image{
+    filter: saturate(0);
+}
+
+.team__image:hover{
+    filter: saturate(1);
+}
+
+.team__member:hover{
+    box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.3);
+    background: transparent;
+    transition: var(--transition);
+    border: 1px solid var(--color-bg1);
+}
+
+.professors{
+    background: var(--color-bg2);
+    box-shadow: outset 0 0 3rem rgba(0, 0, 0, 0.685);
+    padding: 2rem 0;
+    padding-bottom: 5rem;
+}
+
+.container__professors{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+
+.prof__member{
+    background: var(--color-bg1);
+    border: 1px solid transparent;
+    padding: 2rem;
+}
+.prof__member *{
+    text-align: center;
+    padding-top: 0.2rem;
+}
+
+.prof__image{
+    filter: saturate(0);
+}
+
+.prof__image:hover{
+    filter: saturate(1);
+}
+
+.prof__member:hover{
+    background: transparent;
+    border: 1px solid var(--color-bg1);
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 1024px) {
+    header{
+        height: 60vh;
+        margin-bottom: 4rem;
+      }
+      .container__header{
+        gap: 1rem;
+        padding-bottom: 3rem;
+      }
+    .container__team{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container__professors{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media screen and (max-width: 700px) {
+    header{
+        height: 100vh;
+        margin-bottom: 4rem;
+      }
+      .container__header{
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        padding-bottom: 3rem;
+      }
+    .container__team{
+        grid-template-columns: 1fr;
+    }
+    .container__professors{
+        grid-template-columns: 1fr;
+    }
+  }
+

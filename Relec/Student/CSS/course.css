@@ -1,0 +1,118 @@
+.course {
+    margin-top: 5rem;
+    border-radius: 2rem;
+    background: var(--color-bg1);
+    margin: 5rem;
+    /* color: black; */
+}
+.container__course {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.course__left{
+    margin: 2rem;
+}
+.course__image img{
+    height: 20rem;
+}
+.course__right{
+    background: var(--color-bg2);
+    padding: 5rem 2rem;
+    border-radius: 2rem;
+    margin: auto;
+}
+
+.course__below{
+    padding: 0 5rem;
+    margin: 2rem;
+    background: var(--color-bg2);
+    padding: 5rem 2rem;
+    border-radius: 2rem;
+}
+h3{
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 0,3rem;
+}
+.cos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.obtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  /* color: #000; */
+}
+.course__info {
+  padding: 1rem;
+  text-align: left;
+}
+.course h4,
+.course h6 {
+  margin: 0.5rem;
+}
+.course__info p {
+  margin: 1.2rem 0.5rem 2rem;
+  font-size: 0.9rem;
+}
+
+.course__info .desc {
+  margin: 0;
+  height: 5rem;
+  overflow: hidden;
+  word-wrap: unset;
+}
+@media screen and (max-width: 1024px) {
+    .course{
+        padding: 1rem 0;
+        margin: auto;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+        border-radius: 0;
+    }
+    .container__course{
+        grid-template-columns: 1fr;
+        margin:0;
+        gap: 1rem;
+    }
+    .course__left{
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .cos{
+        flex-direction: row;
+        padding: 0;
+        margin-top: 2rem;
+    }
+    
+    .cbtn{
+        width: 100%;
+        text-align: center;
+    }
+    .course__right{
+        text-align: left;
+        padding: 2rem;
+    }
+    .course__below{
+        /* margin: 0; */
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .course__below{
+        margin: 1rem;
+        /* padding: 0 2rem; */
+    }
+    .cos{
+        flex-direction: column;
+    }
+}
